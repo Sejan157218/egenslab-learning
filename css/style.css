@@ -1,0 +1,32 @@
+/* nav address */
+.address-section{
+    background-color: #002B46;
+    color:#F9FAFC;
+
+}
+.nav-address{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 400;
+}
+.address-text{
+    padding: .8rem;
+}
+.serach-box{
+    background-color: #021C2D;  
+    font-weight: 300;
+    border: none;
+    width: 270px;
+    height: 44px;
+    border-radius: 5px;
+    padding: 1rem;
+    color:#F9FAFC;
+}
+.serach-icon{
+    position: relative;
+    margin-left: -22px;
+}
+.icon{
+    color: #FFA100;
+}
