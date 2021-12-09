@@ -13,7 +13,7 @@
 .address-text{
     padding: .8rem;
 }
-.serach-box{
+.search-box{
     background-color: #021C2D;  
     font-weight: 300;
     border: none;
@@ -23,7 +23,7 @@
     padding: 1rem;
     color:#F9FAFC;
 }
-.serach-icon{
+.search-icon{
     position: relative;
     margin-left: -22px;
 }
@@ -82,4 +82,94 @@
 .banner-text{
     color: #fff;
     z-index: 11;
+}
+
+/*  Features From Learnology */
+.features-text h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #002B46;
+}
+.features-p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #666565;
+}
+.check-box-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #002B46;
+    
+}
+.feature1-img{
+    width: 19rem;
+    height: 271px;
+    border: 10px solid #002B46;
+    position: absolute;
+    margin-left: -58px;
+
+}
+.feature2-img{
+    width: 19rem;
+    height: 271px;
+    border: 10px solid #FFA100;
+    position: relative;
+    margin-top:91px ;
+    z-index: 1;
+   
+}
+
+
+/* Media Query */
+@media only screen and (max-width:688px){
+    .nav-address{
+        display: flex;
+        flex-direction: column
+    }
+    .search{
+        width: 100%;
+    }
+    .search-box{
+        width: 99%;
+    }
+    .nav-address{
+        padding: 0px;
+    }
+    .feature1-img{
+        width: 11.5rem;
+        height: 220px;
+        border: 10px solid #002B46;
+        position: absolute;
+        margin-left: -58px;
+    
+    }
+    .feature2-img{
+        width: 11.5rem;
+        height: 220px;
+        border: 10px solid #FFA100;
+        position: relative;
+        margin-top:91px ;
+        z-index: 1;
+       
+    }
+    
+}
+@media only screen and (min-width:689px) and (max-width:992px){
+    .feature1-img{
+        width: 11.5rem;
+        height: 220px;
+        border: 10px solid #002B46;
+        position: absolute;
+        margin-left: -58px;
+    
+    }
+    .feature2-img{
+        width: 11.5rem;
+        height: 220px;
+        border: 10px solid #FFA100;
+        position: relative;
+        margin-top:91px ;
+        z-index: 1;
+       
+    }
 }
