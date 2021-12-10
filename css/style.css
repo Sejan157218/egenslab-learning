@@ -1,3 +1,7 @@
+/* common */
+.text-color{
+    color: #002B46;
+}
 /* nav address */
 .address-section{
     background-color: #002B46;
@@ -65,16 +69,14 @@
     background-position: 50%;
     position: relative;
 }
-.banner-content::before {
-    content: "";
-    background: #002b4661;
+.color-overlay{
+    background: #30394B;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
+    height: 400px;
+    width: 100%;
+    opacity: .5;
 }
+
 
 .banner-content > {
     z-index: 10;
@@ -118,6 +120,108 @@
     z-index: 1;
    
 }
+/* Learnology’s History */
+/* .video-container{
+    background: #002b4661;
+    z-index: 115551;
+} */
+.video-content{
+    width: 100%;
+    height: 100%;
+}
+.video-container{
+    position: relative;
+    padding: 0px;
+}
+.video-container::before { 
+    content: "Take A Video Tour At Learnology";
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background: #002b46ba;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+@keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .stroke-solid {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 300;
+    stroke-width: 4px;
+    transition: stroke-dashoffset 1s ease, opacity 1s ease;
+  }
+  
+  .icon {
+    transform: scale(0.8);
+    transform-origin: 50% 50%;
+    transition: transform 200ms ease-out;
+  }
+  
+  #play:hover .stroke-solid {
+    opacity: 1;
+    stroke-dashoffset: 300;
+  }
+  #play:hover .icon {
+    transform: scale(0.9);
+  }
+  
+  
+  #play {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 112;
+  }
+
+.history-text h1{
+      font-size: 36px;
+      font-weight: 700;
+  }
+.learnology-feature{
+    width: 170px;
+    height: 110px;
+    text-align: center;
+    background-color: #F9FAFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learnology-feature p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #002B46;
+}
+
+/* About */
+.about-container{
+    background-image: url(/images/bg.jpg),linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+  background-repeat: no-repeat;
+  background-size: 400px 500px;
+}
+.about-color-overlay{
+    background: #002B46;
+    position: absolute;
+    height: 250px;
+    width: 400px;
+    opacity: .9;
+}
+.about-icon{
+    display: none;
+}
+
+
+
+
+
 
 
 /* Media Query */
@@ -152,8 +256,12 @@
         z-index: 1;
        
     }
+    .about-icon{
+        display: none;
+    }
     
 }
+
 @media only screen and (min-width:689px) and (max-width:992px){
     .feature1-img{
         width: 11.5rem;
@@ -170,6 +278,5 @@
         position: relative;
         margin-top:91px ;
         z-index: 1;
-       
     }
 }
