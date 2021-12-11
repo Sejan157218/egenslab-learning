@@ -310,6 +310,97 @@
     }
 }
 
+/* The Source Of Wisdom */
+.source-container h6{
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFA100;
+}
+.source-container h1{
+    font-size: 48px;
+    font-weight: 800;
+    color: #002B46;
+}
+
+/* learning-center */
+.learning-center{
+    background-image: url(/images/learning-bg.jpg),linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 336px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+}
+.learning-center-color-overlay{
+    background: #002B46;
+    position: absolute;
+    height: 336px;
+    width: 100%;
+    opacity: .9;
+}
+.learning-text{
+    z-index: 11;
+}
+.learning-text h1{
+    font-size: 34px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+.learning-text p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+.learnig-btn{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 25px;
+    fill: #000;
+    background-color: #fff;
+    color: #002B46;
+    border-radius: 5px;
+    border: none;
+}
+.learnig-btn:hover{
+    background-color: #002B46;
+    color: #fff;
+}
+
+/* teaching-container */
+
+.teaching-container h6{
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFA100;
+}
+.teaching-container h2{
+    font-size: 36px;
+    font-weight: 800;
+    color: #002B46;
+}
+.teaching-container p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #666565;
+}
+
+.teaching-div{
+    border-right: 1px solid #666565;
+}
+
+
+
+
+
+
+
+
 @media only screen and (min-width:689px) and (max-width:992px){
     .feature1-img{
         width: 11.5rem;
