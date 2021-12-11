@@ -203,22 +203,61 @@
 
 /* About */
 .about-container{
-    background-image: url(/images/bg.jpg),linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+    background-image: url(/images/bg.jpg);
   background-repeat: no-repeat;
-  background-size: 400px 500px;
+  background-size: 89% 43rem;
+  height: 43rem;
+  z-index: -2;
 }
 .about-color-overlay{
     background: #002B46;
     position: absolute;
-    height: 250px;
-    width: 400px;
+    height: 43rem;
+    width: 75%;
     opacity: .9;
+    z-index: -3;
+}
+.about-text{
+    position: relative;
+    margin-top: -480px;
+    z-index: -1;
+}
+.about-text h6{
+    color: #FFA100;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.about-text h1{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.about-text p{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.about-content{
+    width: 370px;
+    height: 125px;
+    background-color: #F9FAFC;
 }
 .about-icon{
-    display: none;
+    width: 50px;
+    height: 50px;
+    background: rgba(29, 194, 149, 0.1);
+    border-radius: 5px;
 }
-
-
+.about-content span{
+    color: #002B46;
+    font-size: 30px;
+    font-weight: 500;
+}
+.about-container-text-icon{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 29px;
+}
 
 
 
@@ -259,7 +298,11 @@
     .about-icon{
         display: none;
     }
-    
+    .about-container-text-icon{
+        
+        grid-template-columns: repeat(1,1fr);
+        
+    }
 }
 
 @media only screen and (min-width:689px) and (max-width:992px){
@@ -278,5 +321,8 @@
         position: relative;
         margin-top:91px ;
         z-index: 1;
+    }
+    .about-container-text-icon{
+        grid-template-columns: repeat(1,1fr);
     }
 }
