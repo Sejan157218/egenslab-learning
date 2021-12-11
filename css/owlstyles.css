@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Noto Sans HK', sans-serif;
+  background: #fff;
+}
+h5{
+  font-size: 22px;
+  font-weight: 700;
+}
+p{
+  font-size: 18px;
+  font-weight: 400;
+}
+.slider-content{
+  padding-top: 45px;
+}
+.slider {
+  margin-bottom: 30px;
+  position: relative;
+}
+.slider .owl-item.active.center .slider-card {
+  transform: scale(1.15);
+  opacity: 1;
+  background: #002B46; /* fallback for old browsers */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
+.slider .owl-item.active.center .slider-card-icon {
+  display: flex;
+}
+.slider .owl-item.active.center .slider-card-icon1 {
+  display: flex;
+}
+.slider-card {
+  background: #F9FAFC;
+  padding: 0px 0px;
+  margin: 92px 15px 90px 15px;
+  border-radius: 5px;
+  transform: scale(0.9);
+  transition: all 0.3s;
+  color: #002B46;
+}
+.slider-card img {
+  border-radius: 5px 5px 0px 0px;
+}
+.owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+.owl-nav .owl-next {
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+.owl-dots {
+  text-align: center;
+}
+.owl-dots .owl-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background: #ccc !important;
+  margin-left: 3px;
+  margin-right: 3px;
+  outline: none;
+}
+.owl-dots .owl-dot.active {
+  background: #002B46 !important;
+}
+.slider-card-icon{
+  display: none;
+  flex-direction: column;
+  
+}
+.slider-card-icon i{
+  display: flex;
+  flex-direction: column;
+  margin-left: -38px;
+  margin-top: 10px;
+}
+.slider-card-icon i:hover{
+  color: #FFA100;
+}
+.slider-card-icon1{
+  display: none;
+  flex-direction: column;
+}
+.slider-card-icon1 i{
+  display: flex;
+  flex-direction: column;
+  margin-right: -38px;
+  margin-top: 10px;
+}
+.slider-card-icon1 i:hover{
+  color: #FFA100;
+}

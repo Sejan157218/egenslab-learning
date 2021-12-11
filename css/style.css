@@ -74,7 +74,7 @@
     position: absolute;
     height: 400px;
     width: 100%;
-    opacity: .5;
+    opacity: .7;
 }
 
 
@@ -211,7 +211,7 @@
     position: absolute;
     height: 43rem;
     width: 75%;
-    opacity: .9;
+    opacity: 0.95;
     z-index: -3;
 }
 .about-text{
@@ -257,59 +257,6 @@
 }
 
 
-
-
-
-/* Media Query */
-@media only screen and (max-width:688px){
-    .nav-address{
-        display: flex;
-        flex-direction: column
-    }
-    .search{
-        width: 100%;
-    }
-    .search-box{
-        width: 99%;
-    }
-    .nav-address{
-        padding: 0px;
-    }
-    .feature1-img{
-        width: 11.5rem;
-        height: 220px;
-        border: 10px solid #002B46;
-        position: absolute;
-        margin-left: -58px;
-    
-    }
-    .feature2-img{
-        width: 11.5rem;
-        height: 220px;
-        border: 10px solid #FFA100;
-        position: relative;
-        margin-top:91px ;
-        z-index: 1;
-       
-    }
-    .about-icon{
-        display: none;
-    }
-    .about-container-text-icon{
-        
-        grid-template-columns: repeat(1,1fr);
-        
-    }
-    .about-text{
-        margin-top: -680px;
-    }
-    .about-content{
-        width: 370px;
-        height: 85px;
-        background-color: #F9FAFC;
-    }
-}
-
 /* The Source Of Wisdom */
 .source-container h6{
     font-size: 24px;
@@ -340,7 +287,7 @@
     position: absolute;
     height: 336px;
     width: 100%;
-    opacity: .9;
+    opacity: .95;
 }
 .learning-text{
     z-index: 11;
@@ -396,8 +343,129 @@
 
 
 
+/* footer */
+.footer-container{
+    font-size: 16px;
+    font-weight: 300;
+    color: #F9FAFC;
+    height: 586px;
+    background-color: #002943;
+}
+.Subscribe-input{
+    width: 270px;
+    height: 46px;
+    background: #FFFFFF;
+    box-shadow: 7px 10px 40px rgba(13, 52, 79, 0.1);
+    border-radius: 5px;
+    margin: 0px;
+    position: absolute;
+    padding: 0px 5px 5px 20px;
+    font-size: 10px;
+    color: #A6B1C2;
+}
 
 
+.Subscribe-btn{
+    position: relative;
+    width: 107px;
+    height: 42px;
+    border: none;
+    margin-left: 162px;
+    padding: 4px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #FFA100;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 2px;
+    
+}
+.newslatter{
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-bottom li a{
+    color: #fff;
+    margin-bottom: 3px;
+}
+.nav-bottom li a:hover{
+    color: #FFA100;
+    margin-bottom: 3px;
+}
+.footer-icon-color{
+    color: #FFA100;
+}
+.footer-social{
+    height: 120px;
+    background-color: #002943;
+}
+.footer-social i{
+    Width :26px;
+    Height :30px;
+}
+.footer-social i:hover{
+    color: #FFA100;
+}
+.footer-content{
+    padding-top: 90px;
+}
+.footer-social-content{
+    padding-top: 90px;
+}
+
+
+/* Media Query */
+@media only screen and (max-width:688px){
+    .nav-address{
+        display: flex;
+        flex-direction: column
+    }
+    .search{
+        width: 100%;
+    }
+    .search-box{
+        width: 99%;
+    }
+    .nav-address{
+        padding: 0px;
+    }
+    .feature1-img{
+        width: 11.5rem;
+        height: 220px;
+        border: 10px solid #002B46;
+        position: absolute;
+        margin-left: -58px;
+    
+    }
+    .feature2-img{
+        width: 11.5rem;
+        height: 220px;
+        border: 10px solid #FFA100;
+        position: relative;
+        margin-top:91px ;
+        z-index: 1;
+       
+    }
+    .about-icon{
+        display: none;
+    }
+    .about-container-text-icon{
+        
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .about-text{
+        margin-top: -680px;
+    }
+    .about-content{
+        width: 370px;
+        height: 85px;
+        background-color: #F9FAFC;
+    }
+    .footer-social-content{
+        padding-top: 10px;
+    }
+}
 
 
 
@@ -423,5 +491,5 @@
     }
     .about-text{
         margin-top: -650px;
-    }
+    } 
 }
