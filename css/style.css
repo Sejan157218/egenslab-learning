@@ -363,6 +363,9 @@
     font-size: 10px;
     color: #A6B1C2;
 }
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
 
 
 .Subscribe-btn{
